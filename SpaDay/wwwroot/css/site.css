@@ -1,6 +1,18 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+/*.color {
+    position: relative;
+    color:aqua
+}*/
 
+#demobox {
+    
+    border: 5px solid blue;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -69,3 +81,48 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+#red {
+    background-color: #A43741;
+}
+
+#blue {
+    background-color: #2F4073;
+}
+
+#green {
+    background-color: #2D882D;
+}
+
+#yellow {
+    background-color: #FFC107;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+
+    .rating > span {
+        display: inline-block;
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+    }
+
+        .rating > span:hover {
+            cursor: pointer;
+        }
+        /* .rating > span:hover:before, */
+        .rating > span#red:hover ~ span:before,
+        .rating > span#blue:hover ~ span:before,
+        .rating > span#green:hover ~ span:before,
+        .rating > span#yellow:hover ~ span:before, {
+            content: "";
+            position: absolute;
+            left: 0;
+            background-color: white;
+            opacity: .25;
+            width: 10rem;
+            height: 10rem;
+        }
